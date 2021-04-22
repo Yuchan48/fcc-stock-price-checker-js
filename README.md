@@ -1,4 +1,4 @@
-# FreeCodeCamp Stock Price Checker JS
+# FreeCodeCamp Stock Price Checker
 ## Information Security - Helmet.js
 ___
 ### instructions
