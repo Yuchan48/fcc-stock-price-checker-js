@@ -3,22 +3,9 @@ let expect = require("chai").expect;
 let mongoose = require("mongoose");
 let mongodb = require("mongodb");
 const fetch = require("node-fetch");
+let Stock = require("../models/stock").Stock;
 
 module.exports = function(app) {
-  mongoose.connect(process.env.DB, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  });
-
-  //create mongoose Schema and Model
-  let stockSchema = new mongoose.Schema({
-    name: { type: String, required: true },
-    like: Boolean,
-    ips: [String]
-  });
-
-  let Stock = mongoose.model("stock", stockSchema);
-
   app.route("/api/stock-prices").get(async function(req, res) {
     let stockName = req.query.stock;
     let ipAdress = [req.ip];
