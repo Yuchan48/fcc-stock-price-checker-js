@@ -1,0 +1,38 @@
+body {
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  background-image: url("https://cdn.glitch.com/ce97862c-2929-464c-b341-64c122d10d2f%2Fdylan-sauerwein-qwyytY_Iguk-unsplash.jpg?v=1619461115573");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn {
+  width: 150px;
+  height: 25px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #023859;
+}
+
+.input {
+  height: 25px;
+  border-radius: 5px;
+}
+
+.checkBox {
+  vertical-align: middle;
+  zoom: 1.5;
+}
